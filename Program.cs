@@ -18,26 +18,24 @@ namespace _3_1_17
             int[] B = new int[10] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             int[] C = new int[5];
 
+            // Запись элементов стоящих на четных местах A(N):
             int j = 0;
             for (int i = 0; i < B.Length; i += 2)
             {                
                 A[j] = B[i];
                 j++;                
             }
-
+            // Запись элементов стоящих на нечетных местах C(N):
             j = 0;
             for (int i = 1; i < B.Length; i += 2)
             {
                 C[j] = B[i];
                 j++;
             }
-
-
+            // Вывод массивов A(N) и C(N) в консоль:
             for (j = 0; j < A.Length; j++)
                 Console.Write(A[j]);
-
             Console.WriteLine();
-
             for (j = 0; j < C.Length; j++)
                 Console.Write(C[j]);
 
